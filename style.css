@@ -955,7 +955,22 @@ h6,
 .h6 {
   font-family: var(--helvetica);
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-size: var(--large);
+}
+
+h3,
+.h3 {
+  font-size: var(--medium);
+}
+
+h4,
+.h4 {
+  font-size: var(--body);
 }
 
 body,
