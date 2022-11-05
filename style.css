@@ -968,7 +968,6 @@ body,
 .left-nav {
   display: flex;
   align-items: center;
-  width: 80%;
 }
 
 .left-nav .primary-menu {
