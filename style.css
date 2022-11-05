@@ -1046,11 +1046,14 @@ footer {
 
 .site-branding {
   position: relative;
+  background: var(--yellow-bolt);
+  height: 18rem;
+  margin-bottom: -5rem;
 }
 
 .main-logo {
   position: absolute;
-  top: -31px;
+  top: -34px;
   left: 30px;
 }
 
