@@ -17,17 +17,12 @@ jobs:
       - name: Git fetch and unshallow
         run: git fetch --prune --unshallow
 
-      - name: npm build
-        run: |
-          npm install
-          npm run build-production
-
       - name: Copy theme
         uses: Burnett01/rsync-deployments@4.1
         with:
           switches: -rzv --delete
           path: .
-          remote_path: /www/nosurrenderrunningclub.org/public_html
+          remote_path: /www/nosurrenderrunningclub.org/public_html/wp-content/themes/
           remote_host: siteground198.com
           remote_user: u1274-6xdnk6hapvsu
           remote_key: ${{ secrets.SITEGROUND_PRIVATE_KEY }}
