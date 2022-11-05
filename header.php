@@ -48,7 +48,7 @@
 			?>
                     </div>
                     <div class="right-nav">
-                        <button>Schedule</button>
+                        <button class="secondary">Schedule</button>
                         <button>Donate</button>
                     </div>
                     </nav><!-- #site-navigation -->

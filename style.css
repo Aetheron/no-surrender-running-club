@@ -40,13 +40,13 @@
 
 :root {
   --yellow-bolt: #ffee00;
-  --yellow-bolt-print: var(--yellow-bolt);
+  --yellow-bolt-print: #ffea00;
   --storm-cloud: #000000;
   --storm-cloud-print: #00000b;
   --aqua-charge: #04d99d;
   --aqua-charge-print: #00b489;
   --wired-navy: #021f59;
-  --wired-navy-print: var(--wired-navy);
+  --wired-navy-print: #002159;
   --nsrc-white: #fff;
 
   --gradient-direction: 90deg;
@@ -103,6 +103,7 @@ html {
 
 body {
   margin: 0;
+  font-family: var(--helvetica), sans-serif;
 }
 
 main {
@@ -112,6 +113,7 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  font: var(--futura);
 }
 
 /* Grouping content
@@ -460,7 +462,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #191970;
+  color: var(--storm-cloud);
 }
 
 a:focus {
@@ -494,7 +496,13 @@ button {
   font-size: var(--smallish);
   font: var(--helvetica);
   padding: 5px 12px;
-  min-width: 105px;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--storm-cloud);
+  opacity: 0.8;
 }
 
 button:hover,
@@ -567,13 +575,6 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-/* .yellow-background {
-  background-color: var(--yellow-bolt);
-  position: absolute;
-  width: 100%;
-  top: 150px;
-  bottom: 100px;
-} */
 
 /*--------------------------------------------------------------
 # Components
@@ -811,7 +812,7 @@ textarea {
 }
 
 .small-logo {
-  width: 30px;
+  width: 45px;
 }
 
 .medium-logo {
@@ -969,14 +970,18 @@ body,
   justify-content: space-between;
 }
 
-.right-nav > button:first-child {
-  margin-right: 5px;
-  background-color: var(--aqua-charge);
-  color: var(--storm-cloud);
+.top-nav a {
+  margin-left: 10px;
 }
 
-.nav-logo {
-  margin-right: 10px;
+.right-nav > button:first-child {
+  margin-right: 5px;
+}
+
+button.secondary {
+  background-color: var(--yellow-bolt);
+  color: var(--storm-cloud);
+  border: 2px solid var(--storm-cloud);
 }
 
 .announcement-banner {
@@ -1004,6 +1009,10 @@ body,
   font-size: var(--medium);
   line-height: var(--larger);
   font-weight: 600;
+}
+
+footer {
+  background-color: var(--nsrc-white);
 }
 
 .footer-links {
