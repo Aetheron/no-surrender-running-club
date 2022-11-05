@@ -576,6 +576,8 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 
+
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -967,7 +969,22 @@ body,
 .left-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.left-nav .primary-menu {
+  gap: 20px;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: 37.5em) {
+  .right-nav {
+    flex-direction: row;
+  }
 }
 
 .top-nav a {
