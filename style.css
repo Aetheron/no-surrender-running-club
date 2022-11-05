@@ -1000,6 +1000,7 @@ body,
 
 .menu-toggle {
   min-width: unset;
+  margin: 0 auto;
 }
 .menu-toggle svg {
   fill: white;
