@@ -55,9 +55,6 @@
                     </div>
                     </nav><!-- #site-navigation -->
                 </div>
-                <!-- <div class="announcement-banner">
-                    <span class=banner-content>banner content</span>
-                </div> -->
             </div>
             <?php
 			if ( !is_front_page() && !is_home() ) :
