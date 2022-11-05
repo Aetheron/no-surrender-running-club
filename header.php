@@ -37,7 +37,9 @@
 
                         <nav id="site-navigation" class="main-navigation">
                             <button class="menu-toggle" aria-controls="primary-menu"
-                                aria-expanded="false"><?php esc_html_e( 'Menu', 'no-surrender-running-club' ); ?></button>
+                                aria-expanded="false">
+                                <?php echo file_get_contents(get_template_directory() . '/assets/icons/bars-solid.svg') ?>
+                            </button>
                             <?php
 			wp_nav_menu(
 				array(

@@ -998,6 +998,17 @@ body,
   gap: 20px;
 }
 
+.menu-toggle {
+  min-width: unset;
+  margin: 0 auto;
+}
+.menu-toggle svg {
+  fill: white;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+}
+
 .top-nav a {
   margin-left: 10px;
 }
