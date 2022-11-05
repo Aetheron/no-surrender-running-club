@@ -54,10 +54,10 @@
   --gradient-mid: rgba(255, 238, 0, 1);
   --gradient-end: rgba(253, 215, 2, 1);
   --gradient-bg-linear: linear-gradient(
-    var(--gradient-direction),
-    var(--gradient-start) 15%,
-    var(--gradient-mid) 84%,
-    var(--gradient-end) 97%
+      var(--gradient-direction),
+      var(--gradient-start) 15%,
+      var(--gradient-mid) 84%,
+      var(--gradient-end) 97%
   );
 
   --futura: "Futura Condensed", sans-serif;
@@ -321,7 +321,7 @@ optgroup,
 textarea {
   color: #404040;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -656,23 +656,6 @@ textarea {
   }
 }
 
-@media screen and (max-width: 37.5em) {
-  .top-nav,
-  .right-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .right-nav {
-    margin-top: 10px;
-  }
-
-  .nav-logo {
-    display: none;
-  }
-}
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -1000,13 +983,27 @@ body,
 
 .menu-toggle {
   min-width: unset;
-  margin: 0 auto;
 }
+
 .menu-toggle svg {
   fill: white;
   height: 20px;
   width: 20px;
   margin-top: 5px;
+}
+
+.menu-main-menu-container {
+  position: absolute;
+  background: var(--nsrc-white);
+  border: var(--yellow-bolt) .5rem solid;
+  border-bottom: 0;
+  border-radius: 0 0 .5rem .5rem;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.menu-main-menu-container li:hover {
+  text-decoration: currentColor;
 }
 
 .top-nav a {
