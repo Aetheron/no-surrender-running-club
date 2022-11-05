@@ -1059,6 +1059,14 @@ footer {
 
 .secondary-logo {
   position: absolute;
-  top: -15px;
-  right: 30px;
+  top: -21px;
+  right: 5rem;
+}
+
+body:not(.home) section.elementor-top-section {
+  border-inline: 5rem solid var(--yellow-bolt);
+}
+
+body:not(.home) section.elementor-top-section:last-of-type {
+  border-bottom: 5rem solid var(--yellow-bolt);
 }
