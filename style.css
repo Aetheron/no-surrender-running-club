@@ -575,6 +575,8 @@ textarea {
   bottom: 100px;
 } */
 
+
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -966,7 +968,23 @@ body,
 .left-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 80%;
+}
+
+.left-nav .primary-menu {
+  gap: 20px;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: 37.5em) {
+  .right-nav {
+    flex-direction: row;
+  }
 }
 
 .right-nav > button:first-child {
