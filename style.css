@@ -491,13 +491,13 @@ input[type="submit"] {
 button {
   background-color: var(--storm-cloud);
   color: var(--nsrc-white);
-  border: none;
   border-radius: 5px;
   font-size: var(--smallish);
   font: var(--helvetica);
   padding: 5px 12px;
   min-width: 120px;
   cursor: pointer;
+  border: 2px solid var(--storm-cloud);
 }
 
 button:hover {
@@ -576,8 +576,6 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 
-
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -648,8 +646,33 @@ textarea {
   .main-navigation ul {
     display: flex;
   }
+
+  .right-nav {
+    flex-direction: row;
+  }
+
+  .right-nav > button:first-child {
+    margin-right: 5px;
+  }
 }
 
+@media screen and (max-width: 37.5em) {
+  .top-nav,
+  .right-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right-nav {
+    margin-top: 10px;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+}
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -975,24 +998,8 @@ body,
   gap: 20px;
 }
 
-.right-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-@media screen and (min-width: 37.5em) {
-  .right-nav {
-    flex-direction: row;
-  }
-}
-
 .top-nav a {
   margin-left: 10px;
-}
-
-.right-nav > button:first-child {
-  margin-right: 5px;
 }
 
 button.secondary {
@@ -1030,6 +1037,7 @@ button.secondary {
 
 footer {
   background-color: var(--nsrc-white);
+  padding: 10px;
 }
 
 .footer-links {
@@ -1061,4 +1069,12 @@ footer {
   position: absolute;
   top: -15px;
   right: 30px;
+}
+
+.footer-bar {
+  height: 15px;
+  border-radius: 10px;
+  margin: 0px 15px;
+  background: var(--aqua-charge);
+  background: var(--gradient-bg-linear);
 }
