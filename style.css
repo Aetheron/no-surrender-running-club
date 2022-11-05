@@ -981,6 +981,16 @@ body,
   gap: 10px;
 }
 
+.menu-toggle {
+  min-width: unset;
+}
+.menu-toggle svg {
+  fill: white;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+}
+
 @media screen and (min-width: 37.5em) {
   .right-nav {
     flex-direction: row;
