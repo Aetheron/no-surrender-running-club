@@ -632,7 +632,7 @@ textarea {
 }
 
 /* Paypal styles */
-.right-nav form, .right-nav div {
+.right-nav .menu-buttons, .right-nav form, .right-nav div {
   display: inline;
   margin: 0;
 }
@@ -640,6 +640,7 @@ textarea {
   background-color: var(--storm-cloud);
   border-radius: 5px;
   padding: 1px 0;
+  margin-bottom: 1px;
   vertical-align: bottom;
 }
 
@@ -662,7 +663,7 @@ textarea {
     flex-direction: row;
   }
 
-  .right-nav > button:first-child {
+  .right-nav > li:first-child {
     margin-right: 5px;
   }
 }
@@ -683,6 +684,11 @@ textarea {
   .nav-logo {
     display: none;
   }
+
+  .right-nav ul {
+    padding: 0;
+  }
+
 }
 
 .site-main .comment-navigation,
@@ -1016,6 +1022,20 @@ body,
 
 .top-nav a {
   margin-left: 10px;
+}
+
+.right-nav .menu-buttons li.menu-item {
+  margin-right: 5px;
+  background-color: var(--aqua-charge);
+  color: var(--storm-cloud);
+  border-radius: 5px 5px 5px 5px;
+  display: inline-block;
+  margin: 1px 3px;
+  color: var(--storm-cloud);
+  border: 2px solid var(--aqua-charge);
+  font: var(--helvetica);
+  padding: 5px 12px;
+  min-width: 130px;
 }
 
 button.secondary {
