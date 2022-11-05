@@ -1,0 +1,33 @@
+name: Deploy to production
+
+# Controls when the action will run. 
+on:
+  # This action can only be manually triggered
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out the repository under $GITHUB_WORKSPACE, so the job can access it
+      - uses: actions/checkout@v2
+
+      - name: Git fetch and unshallow
+        run: git fetch --prune --unshallow
+
+      - name: npm build
+        run: |
+          npm install
+          npm run build-production
+
+      - name: Copy theme
+        uses: Burnett01/rsync-deployments@4.1
+        with:
+          switches: -rzv --delete
+          path: .
+          remote_path: /www/nosurrenderrunningclub.org/public_html
+          remote_host: siteground198.com
+          remote_user: u1274-6xdnk6hapvsu
+          remote_key: ${{ secrets.SITEGROUND_PRIVATE_KEY }}
