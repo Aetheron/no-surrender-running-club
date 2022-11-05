@@ -85,6 +85,13 @@
 # Generic
 --------------------------------------------------------------*/
 
+* {
+  font-family: var(--helvetica);
+  font-size: var(--small);
+  line-height: var(--medium);
+  font-weight: 600;
+}
+
 /* Normalize
 --------------------------------------------- */
 
@@ -104,6 +111,7 @@ html {
 body {
   margin: 0;
   font-family: var(--helvetica), sans-serif;
+  color: var(--storm-cloud);
 }
 
 main {
@@ -335,10 +343,6 @@ h6 {
   clear: both;
 }
 
-p {
-  margin-bottom: 1.5em;
-}
-
 dfn,
 cite,
 em,
@@ -398,11 +402,6 @@ hr {
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
-}
-
-ul,
-ol {
-  margin: 0 0 1.5em 3em;
 }
 
 ul {
@@ -938,14 +937,22 @@ h6,
 .h6 {
   font-family: var(--helvetica);
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
-p {
-  font-family: var(--helvetica);
+h2,
+.h2 {
+  font-size: var(--large);
+}
+
+h3,
+.h3 {
+  font-size: var(--medium);
+}
+
+h4,
+.h4 {
   font-size: var(--body);
-  line-height: var(--medium);
-  font-weight: 700;
 }
 
 body,
@@ -954,7 +961,6 @@ body,
   font-size: var(--body);
   line-height: var(--medium);
   font-weight: 400;
-  background-color: var(--yellow-bolt);
 }
 
 .main-header-container {
