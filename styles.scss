@@ -33,11 +33,14 @@
 
   //sizing
   --root-size: 8rem;
-  --largest: calc(var(--root-size) * 8); // 64px
-  --largeer: calc(var(--root-size) * 6); // 48px
+  --extralargeer: calc(var(--root-size) * 8); // 64px
+  --extralarge: calc(var(--root-size) * 7); // 56px
+  --largest: calc(var(--root-size) * 6); // 48px
+  --largeer: calc(var(--root-size) * 5); // 40px
   --large: calc(var(--root-size) * 4); // 32px
   --medium: calc(var(--root-size) * 3.5); // 28px
   --body: calc(var(--root-size) * 2.75); // 22px
+  --smallish: calc(var(--root-size) * 2.25); // 18px
   --small: calc(var(--root-size) * 2); // 16px
   --smaller: calc(var(--root-size) * 1.75); // 14px
   --smallest: calc(var(--root-size) * 1.25); // 10px
@@ -73,3 +76,52 @@ p {
   font-weight: 700;
 }
 
+body,
+.body-copy {
+  font-family: var(--helvetica);
+  font-size: var(--body);
+  line-height: var(--medium);
+  font-weight: 400;
+}
+
+.top-nav {
+  font-size: var(--small);
+  line-height: var(--medium);
+  font-weight: 300;
+}
+
+.banner {
+  font-size: var(--largest);
+  line-height: var(--extralargeer);
+  font-weight: 700;
+}
+
+.callouts {
+  font-size: var(--largest);
+  line-height: var(--extralargeer);
+  font-weight: 500;
+}
+
+.section-heading {
+  font-size: var(--larger);
+  line-height: var(--extralarge);
+  font-weight: 600;
+}
+
+.button--big {
+  font-size: var(--medium);
+  line-height: var(--larger);
+  font-weight: 600;
+}
+
+.footer-links {
+  font-size: var(--smaller);
+  line-height: var(--smallish);
+  font-weight: 700;
+}
+
+.label {
+  font-size: var(--small);
+  line-height: var(--body);
+  font-weight: 700;
+}
