@@ -51,7 +51,7 @@
                     </div>
                     <div class="right-nav">
                         <button class="secondary">Schedule</button>
-                        <button>Donate</button>
+                        <?php echo do_shortcode('[paypal-donation]'); ?>
                     </div>
                     </nav><!-- #site-navigation -->
                 </div>

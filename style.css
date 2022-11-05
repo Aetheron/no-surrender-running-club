@@ -631,6 +631,18 @@ textarea {
   text-decoration: none;
 }
 
+/* Paypal styles */
+.right-nav form, .right-nav div {
+  display: inline;
+  margin: 0;
+}
+.right-nav input[type=image] {
+  background-color: var(--storm-cloud);
+  border-radius: 5px;
+  padding: 1px 0;
+  vertical-align: bottom;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
