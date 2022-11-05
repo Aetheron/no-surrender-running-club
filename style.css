@@ -1017,10 +1017,6 @@ body,
   display: inline;
 }
 
-.menu-main-menu-container li {
-  padding-inline: .25rem;
-}
-
 .menu-main-menu-container li:hover {
   text-decoration: underline;
   text-underline-offset: .25rem;
