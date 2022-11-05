@@ -65,10 +65,10 @@
   --helvetica: "Helvetica Neue", sans-serif;
 
   --root-size: 1rem;
-  --extralargeer: calc(var(--root-size) * 8);
+  --extralarger: calc(var(--root-size) * 8);
   --extralarge: calc(var(--root-size) * 7);
   --largest: calc(var(--root-size) * 6);
-  --largeer: calc(var(--root-size) * 5);
+  --larger: calc(var(--root-size) * 5);
   --large: calc(var(--root-size) * 4);
   --medium: calc(var(--root-size) * 3.5);
   --body: calc(var(--root-size) * 2.75);
@@ -1012,7 +1012,7 @@ button.secondary {
 
 .callouts {
   font-size: var(--largest);
-  line-height: var(--extralargeer);
+  line-height: var(--extralarger);
   font-weight: 500;
 }
 
