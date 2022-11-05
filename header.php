@@ -43,15 +43,24 @@
                             <?php
 			wp_nav_menu(
 				array(
-					'theme_location' => 'menu-1',
+					'theme_location' => 'Primary',
 					'menu_id'        => 'primary-menu',
 				)
 			);
 			?>
                     </div>
                     <div class="right-nav">
-                        <button class="secondary">Schedule</button>
-                        <button>Donate</button>
+										<?php
+			wp_nav_menu(
+				array(
+					'menu' => 'nav-right',
+					'container' => '',
+					'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+					'menu_class' => 'menu-buttons'
+				)
+			);
+			?>
+											<?php echo do_shortcode('[paypal-donation]'); ?>
                     </div>
                     </nav><!-- #site-navigation -->
                 </div>
