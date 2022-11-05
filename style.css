@@ -449,12 +449,13 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: var(--wired-navy);
+  text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   color: #800080;
-}
+} */
 
 a:hover,
 a:focus,
@@ -473,7 +474,6 @@ a:active {
 
 /* Forms
 --------------------------------------------- */
-button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -484,6 +484,17 @@ input[type="submit"] {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
+}
+
+button {
+  background-color: var(--storm-cloud);
+  color: var(--nsrc-white);
+  border: none;
+  border-radius: 5px;
+  font-size: var(--smallish);
+  font: var(--helvetica);
+  padding: 5px 12px;
+  min-width: 105px;
 }
 
 button:hover,
@@ -949,6 +960,23 @@ body,
   padding: 10px 10px 0px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-nav > button:first-child {
+  margin-right: 5px;
+  background-color: var(--aqua-charge);
+  color: var(--storm-cloud);
+}
+
+.nav-logo {
+  margin-right: 10px;
 }
 
 .announcement-banner {
