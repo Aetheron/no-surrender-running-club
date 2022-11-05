@@ -37,7 +37,7 @@
 
                         <nav id="site-navigation" class="main-navigation">
                             <button class="menu-toggle" aria-controls="primary-menu"
-                                aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'no-surrender-running-club' ); ?></button>
+                                aria-expanded="false"><?php esc_html_e( 'Menu', 'no-surrender-running-club' ); ?></button>
                             <?php
 			wp_nav_menu(
 				array(
@@ -53,9 +53,6 @@
                     </div>
                     </nav><!-- #site-navigation -->
                 </div>
-                <!-- <div class="announcement-banner">
-                    <span class=banner-content>banner content</span>
-                </div> -->
             </div>
             <?php
 			if ( !is_front_page() && !is_home() ) :
