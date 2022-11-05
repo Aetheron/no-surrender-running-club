@@ -38,7 +38,7 @@
   font-weight: 700;
 }
 
-* {
+:root {
   --yellow-bolt: #ffee00;
   --yellow-bolt-print: var(--yellow-bolt);
   --storm-cloud: #000000;
@@ -47,6 +47,8 @@
   --aqua-charge-print: #00b489;
   --wired-navy: #021f59;
   --wired-navy-print: var(--wired-navy);
+  --nsrc-white: #fff;
+
   --gradient-direction: 90deg;
   --gradient-start: rgba(15, 255, 189, 1);
   --gradient-mid: rgba(255, 238, 0, 1);
@@ -62,7 +64,7 @@
   --heading-font: var(--futura);
   --helvetica: "Helvetica Neue", sans-serif;
 
-  --root-size: 8rem;
+  --root-size: 1rem;
   --extralargeer: calc(var(--root-size) * 8);
   --extralarge: calc(var(--root-size) * 7);
   --largest: calc(var(--root-size) * 6);
@@ -75,6 +77,8 @@
   --smaller: calc(var(--root-size) * 1.75);
   --smallest: calc(var(--root-size) * 1.25);
   --gutter: calc(var(--root-size) * 2.5);
+
+  font-size: 8px;
 }
 
 /*--------------------------------------------------------------
@@ -552,6 +556,13 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+/* .yellow-background {
+  background-color: var(--yellow-bolt);
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  bottom: 100px;
+} */
 
 /*--------------------------------------------------------------
 # Components
@@ -656,9 +667,15 @@ textarea {
   display: block;
 }
 
-.post,
 .page {
   margin: 0 0 1.5em;
+}
+
+.post {
+  padding: 20px;
+  margin: 140px 10px 50px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .updated:not(.published) {
@@ -782,6 +799,14 @@ textarea {
   display: block;
 }
 
+.small-logo {
+  width: 30px;
+}
+
+.medium-logo {
+  width: 200px;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
@@ -862,6 +887,8 @@ textarea {
   margin-bottom: 1.5em;
 }
 
+/*----------------------*/
+
 h1,
 h2,
 h3,
@@ -907,18 +934,30 @@ body,
   font-size: var(--body);
   line-height: var(--medium);
   font-weight: 400;
+  background-color: var(--yellow-bolt);
+}
+
+.main-header-container {
+  background-color: var(--nsrc-white);
+  padding-bottom: 40px;
 }
 
 .top-nav {
   font-size: var(--small);
   line-height: var(--medium);
   font-weight: 300;
+  padding: 10px 10px 0px;
+  display: flex;
+  align-items: center;
 }
 
-.banner {
-  font-size: var(--largest);
-  line-height: var(--extralargeer);
-  font-weight: 700;
+.announcement-banner {
+  background-color: var(--wired-navy);
+  padding: 10px;
+}
+
+.banner-content {
+  color: var(--nsrc-white);
 }
 
 .callouts {
@@ -949,4 +988,20 @@ body,
   font-size: var(--small);
   line-height: var(--body);
   font-weight: 700;
+}
+
+.site-branding {
+  position: relative;
+}
+
+.main-logo {
+  position: absolute;
+  top: -31px;
+  left: 30px;
+}
+
+.secondary-logo {
+  position: absolute;
+  top: -15px;
+  right: 30px;
 }
