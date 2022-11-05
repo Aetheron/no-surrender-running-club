@@ -1003,13 +1003,17 @@ body,
 }
 
 .menu-main-menu-container {
+  display: none;
   position: absolute;
   background: var(--nsrc-white);
   border: var(--yellow-bolt) .5rem solid;
-  border-bottom: 0;
+  border-top: 0;
   border-radius: 0 0 .5rem .5rem;
   padding: 1rem;
   z-index: 1;
+}
+.toggled .menu-main-menu-container {
+  display: inline;
 }
 
 .menu-main-menu-container li:hover {
