@@ -22,7 +22,7 @@ jobs:
         with:
           switches: -rzv --delete
           path: .
-          remote_path: ~/www/nosurrenderrunningclub.org/public_html/wp-content/themes/
+          remote_path: ~/www/nosurrenderrunningclub.org/public_html/wp-content/themes/no-surrender-running-club
           remote_host: siteground198.com
           remote_user: u1274-6xdnk6hapvsu
           remote_port: 18765
