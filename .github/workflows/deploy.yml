@@ -25,4 +25,5 @@ jobs:
           remote_path: /www/nosurrenderrunningclub.org/public_html/wp-content/themes/
           remote_host: siteground198.com
           remote_user: u1274-6xdnk6hapvsu
+          remote_port: 18765
           remote_key: ${{ secrets.SITEGROUND_PRIVATE_KEY }}
