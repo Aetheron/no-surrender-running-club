@@ -1030,8 +1030,8 @@ footer {
 .site-branding {
   position: relative;
   background: var(--yellow-bolt);
-  height: 8rem;
-  margin-right: 5rem;
+  height: 18rem;
+  margin-bottom: -5rem;
 }
 
 .main-logo {
