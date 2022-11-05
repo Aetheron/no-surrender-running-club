@@ -979,7 +979,6 @@ body,
   font-size: var(--body);
   line-height: var(--medium);
   font-weight: 400;
-  background-color: var(--yellow-bolt);
 }
 
 .main-header-container {
