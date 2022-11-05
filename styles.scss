@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Futura Condensed";
+  src: url("./Fonts/Futura-Condensed-Extra-Bold.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./Fonts/Helvetica-Neue-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+:root {
+  // color
+  --yellow-bolt: #FFEE00;
+  --yellow-bolt-print: var(--yellow-bolt);
+  --storm-cloud: #000000;
+  --storm-cloud-print: #00000B;
+  --aqua-charge: #04D99D;
+  --aqua-charge-print: #00B489;
+  --wired-navy: #021F59;
+  --wired-navy-print: var(--wired-navy);
+  --gradient-direction: 90deg;
+  --gradient-start: rgba(15, 255, 189, 1);
+  --gradient-mid: rgba(255, 238, 0, 1);
+  --gradient-end: rgba(253, 215, 2, 1);
+  --gradient-bg-linear: linear-gradient(var(--gradient-direction), var(--gradient-start) 15%, var(--gradient-mid) 84%, var(--gradient-end) 97%);
+
+  // fonts
+  --futura: "Futura Condensed", sans-serif;
+  --heading-font: var(--futura);
+  --helvetica: "Helvetica Neue", sans-serif;
+
+  //sizing
+  --root-size: 8rem;
+  --largest: calc(var(--root-size) * 8); // 64px
+  --largeer: calc(var(--root-size) * 6); // 48px
+  --large: calc(var(--root-size) * 4); // 32px
+  --medium: calc(var(--root-size) * 3.5); // 28px
+  --body: calc(var(--root-size) * 2.75); // 22px
+  --small: calc(var(--root-size) * 2); // 16px
+  --smaller: calc(var(--root-size) * 1.75); // 14px
+  --smallest: calc(var(--root-size) * 1.25); // 10px
+
+  --gutter: calc(var(--root-size) * 2.5) // 20px
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, .h1 {
+  font-family: var(--heading-font);
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: var(--helvetica);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: var(--helvetica);
+  font-size: var(--body);
+  line-height: var(--medium);
+  font-weight: 700;
+}
+
