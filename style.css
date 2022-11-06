@@ -1190,3 +1190,32 @@ footer {
   background: var(--aqua-charge);
   background: var(--gradient-bg-linear);
 }
+
+.button-over-image {
+  position: absolute;
+  top: -12rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 37.5em) {
+  .button-over-image {
+    top: -25rem;
+  }
+}
+
+.button-over-image button {
+  background: var(--aqua-charge);
+  font-size: var(--small);
+  line-height: var(--body);
+  font-weight: 700;
+  padding: 1.25rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .button-over-image button {
+    font-size: var(--large);
+    line-height: var(--largest);
+    padding: 2.5rem;
+  }
+}
