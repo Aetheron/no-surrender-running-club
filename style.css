@@ -41,7 +41,7 @@ Version: 0.5
 
 @font-face {
   font-family: "Helvetica Neue";
-  src: url("./Fonts/Helvetica-Neue-Bold.otf") format("opentype");
+  src: url("./Fonts/HelveticaNeue-Bold.otf") format("opentype");
   font-weight: 700;
 }
 
