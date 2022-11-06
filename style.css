@@ -631,6 +631,19 @@ textarea {
   text-decoration: none;
 }
 
+/* Paypal styles */
+.right-nav .menu-buttons, .right-nav form, .right-nav div {
+  display: inline;
+  margin: 0;
+}
+.right-nav input[type=image] {
+  background-color: var(--storm-cloud);
+  border-radius: 5px;
+  padding: 1px 0;
+  margin-bottom: 1px;
+  vertical-align: bottom;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -726,12 +739,6 @@ textarea {
 
 .updated:not(.published) {
   display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
 }
 
 .page-links {
@@ -1057,6 +1064,20 @@ body,
 
 .top-nav a {
   margin-left: 10px;
+}
+
+.right-nav .menu-buttons li.menu-item {
+  margin-right: 5px;
+  background-color: var(--aqua-charge);
+  color: var(--storm-cloud);
+  border-radius: 5px 5px 5px 5px;
+  display: inline-block;
+  margin: 1px 3px;
+  color: var(--storm-cloud);
+  border: 2px solid var(--aqua-charge);
+  font: var(--helvetica);
+  padding: 5px 12px;
+  min-width: 130px;
 }
 
 button.secondary {
