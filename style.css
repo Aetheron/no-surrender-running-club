@@ -670,6 +670,10 @@ textarea {
   padding: 0;
 }
 
+.right-nav form {
+  text-align: right;
+}
+
 .right-nav input[type=image] {
   display: inline-block;
   border-radius: 5px 5px 5px 5px;
