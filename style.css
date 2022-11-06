@@ -638,6 +638,12 @@ textarea {
   text-decoration: none;
 }
 
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* Paypal styles */
 .right-nav .menu-buttons, .right-nav form, .right-nav div {
   display: inline;
