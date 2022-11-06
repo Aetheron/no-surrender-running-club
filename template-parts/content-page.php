@@ -11,10 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-			$title = get_the_title();
-			echo $title == 'Home' ? '' : '<h1 class="entry-title">' . $title . '</h1>';
-		?>
 	</header><!-- .entry-header -->
 
 	<?php no_surrender_running_club_post_thumbnail(); ?>
