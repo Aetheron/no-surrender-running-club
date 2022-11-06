@@ -638,6 +638,12 @@ textarea {
   text-decoration: none;
 }
 
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* Paypal styles */
 .right-nav .menu-buttons, .right-nav form, .right-nav div {
   display: inline;
@@ -662,6 +668,11 @@ textarea {
 .right-nav .menu-buttons, .right-nav form, .right-nav div {
   display: inline;
   padding: 0;
+}
+
+.right-nav form {
+  margin-right: -2px;
+  text-align: right;
 }
 
 .right-nav input[type=image] {
@@ -1062,6 +1073,19 @@ body,
   z-index: 1;
 }
 
+@media screen and (min-width: 37.5em) {
+  .top-nav {
+    padding-bottom: 25px;
+  }
+
+  .menu-main-menu-container {
+    display: flex;
+    position: static;
+    border: none;
+    padding: 0;
+  }
+}
+
 .toggled .menu-main-menu-container {
   display: inline;
 }
@@ -1158,13 +1182,6 @@ footer {
   right: 5rem;
 }
 
-body:not(.home) section.elementor-top-section {
-  border-inline: 5rem solid var(--yellow-bolt);
-}
-
-body:not(.home) section.elementor-top-section:last-of-type {
-  border-bottom: 5rem solid var(--yellow-bolt);
-}
 
 .footer-bar {
   height: 15px;
