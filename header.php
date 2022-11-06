@@ -44,7 +44,7 @@
 			wp_nav_menu(
 				array(
 					'theme_location' => 'Primary',
-					'menu_id'        => 'primary-menu',
+					'menu'           => 'Main Menu',
 				)
 			);
 			?>
@@ -55,7 +55,6 @@
 				array(
 					'menu' => 'nav-right',
 					'container' => '',
-					'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 					'menu_class' => 'menu-buttons'
 				)
 			);

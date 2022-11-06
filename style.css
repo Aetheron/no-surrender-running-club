@@ -650,6 +650,33 @@ textarea {
   display: block;
 }
 
+/* paypal and menu buttons */
+.right-nav .menu-buttons, .right-nav form, .right-nav div {
+  display: inline;
+  padding: 0;
+}
+.right-nav input[type=image] {
+  display: inline-block;
+  border-radius: 5px 5px 5px 5px;
+  padding: 2px 0;
+  vertical-align: bottom;
+  background-color: var(--storm-cloud);
+}
+
+.right-nav .menu-buttons li.menu-item {
+  margin-right: 5px;
+  background-color: var(--aqua-charge);
+  color: var(--storm-cloud);
+  border-radius: 5px 5px 5px 5px;
+  display: inline-block;
+  margin: 1px 3px;
+  color: var(--storm-cloud);
+  border: 2px solid var(--aqua-charge);
+  font: var(--helvetica);
+  padding: 5px 12px;
+  min-width: 130px;
+}
+
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none;
