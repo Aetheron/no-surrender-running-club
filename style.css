@@ -1061,10 +1061,15 @@ body,
 }
 
 @media screen and (min-width: 37.5em) {
+  .top-nav {
+    padding-bottom: 25px;
+  }
+
   .menu-main-menu-container {
     display: flex;
     position: static;
     border: none;
+    padding: 0;
   }
 }
 
