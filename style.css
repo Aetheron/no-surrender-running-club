@@ -643,6 +643,7 @@ textarea {
   display: inline;
   margin: 0;
 }
+
 .right-nav input[type=image] {
   background-color: var(--storm-cloud);
   border-radius: 5px;
@@ -662,6 +663,7 @@ textarea {
   display: inline;
   padding: 0;
 }
+
 .right-nav input[type=image] {
   display: inline-block;
   border-radius: 5px 5px 5px 5px;
@@ -1156,13 +1158,6 @@ footer {
   right: 5rem;
 }
 
-body:not(.home) section.elementor-top-section {
-  border-inline: 5rem solid var(--yellow-bolt);
-}
-
-body:not(.home) section.elementor-top-section:last-of-type {
-  border-bottom: 5rem solid var(--yellow-bolt);
-}
 
 .footer-bar {
   height: 15px;
