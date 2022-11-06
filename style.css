@@ -1174,7 +1174,7 @@ body:not(.home) section.elementor-top-section:last-of-type {
 
 .button-over-image {
   position: absolute;
-  top: -40rem;
+  top: -25rem;
   left: 50%;
   transform: translateX(-50%);
 }
