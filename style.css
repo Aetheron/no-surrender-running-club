@@ -1191,6 +1191,42 @@ footer {
   background: var(--gradient-bg-linear);
 }
 
+/* EVENT STYLING
+TODO(@davidbhayes): Is there a better way target event-locations, event-types?
+*/
+.location-template-default .site-main,
+.parent-pageid-18 .site-main,
+.single-event .site-main {
+  width: 75%;
+  margin: 1em auto;
+  padding: 1em
+}
+
+.location-template-default .site-main h1,
+.parent-pageid-18 .site-main h1,
+.single-event .site-main h1 {
+  margin: 1em 0;
+  font-size: 2em;
+}
+
+.single-event .site-main h1:before {
+  content: "event: ";
+  text-transform: lowercase;
+  font-size: .5em;
+  color: var(--wired-navy);
+}
+
+.location-template-default .site-main h2,
+.location-template-default .site-main h3,
+.parent-pageid-18 .site-main h2,
+.parent-pageid-18 .site-main h3,
+.single-event .site-main h2,
+.single-event .site-main h3 {
+  color: var(--wired-navy);
+  margin-top: 1em;
+}
+/* end EVENT styling */
+
 .button-over-image {
   position: absolute;
   top: -12rem;
