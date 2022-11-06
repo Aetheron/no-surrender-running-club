@@ -12,8 +12,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-			$title = the_title( '', '', false );
-			echo $title == 'Home' ? '<h1 class="entry-title">' . $title . '</h1>' : '';
+			$title = get_the_title();
+			echo $title == 'Home' ? '' : '<h1 class="entry-title">' . $title . '</h1>';
 		?>
 	</header><!-- .entry-header -->
 
