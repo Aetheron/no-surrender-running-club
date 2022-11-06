@@ -638,6 +638,12 @@ textarea {
   text-decoration: none;
 }
 
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* Paypal styles */
 .right-nav .menu-buttons, .right-nav form, .right-nav div {
   display: inline;
@@ -1060,6 +1066,19 @@ body,
   border-radius: 0 0 .5rem .5rem;
   padding: 1rem;
   z-index: 1;
+}
+
+@media screen and (min-width: 37.5em) {
+  .top-nav {
+    padding-bottom: 25px;
+  }
+
+  .menu-main-menu-container {
+    display: flex;
+    position: static;
+    border: none;
+    padding: 0;
+  }
 }
 
 .toggled .menu-main-menu-container {
