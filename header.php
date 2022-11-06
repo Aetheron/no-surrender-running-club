@@ -41,13 +41,14 @@
                                 <?php echo file_get_contents(get_template_directory() . '/assets/icons/bars-solid.svg') ?>
                             </button>
                             <?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'Primary',
-					'menu'           => 'Main Menu',
-				)
-			);
-			?>
+                            wp_nav_menu(
+                                array(
+                                    'theme_location' => 'Primary',
+                                    'menu'           => 'Main Menu',
+                                )
+                            );
+                            ?>
+                        </nav>
                     </div>
                     <div class="right-nav">
 										<?php
