@@ -1060,6 +1060,14 @@ body,
   z-index: 1;
 }
 
+@media screen and (min-width: 37.5em) {
+  .menu-main-menu-container {
+    display: flex;
+    position: static;
+    border: none;
+  }
+}
+
 .toggled .menu-main-menu-container {
   display: inline;
 }
