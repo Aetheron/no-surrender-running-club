@@ -11,7 +11,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php
+			$title = the_title( '', '', false );
+			echo $title == 'Home' ? '<h1 class="entry-title">' . $title . '</h1>' : '';
+		?>
 	</header><!-- .entry-header -->
 
 	<?php no_surrender_running_club_post_thumbnail(); ?>
