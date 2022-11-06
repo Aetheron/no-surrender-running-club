@@ -1191,7 +1191,6 @@ footer {
   background: var(--gradient-bg-linear);
 }
 
-
 /* EVENT STYLING
 TODO(@davidbhayes): Is there a better way target event-locations, event-types?
 */
@@ -1225,4 +1224,34 @@ TODO(@davidbhayes): Is there a better way target event-locations, event-types?
 .single-event .site-main h3 {
   color: var(--wired-navy);
   margin-top: 1em;
+}
+/* end EVENT styling */
+
+.button-over-image {
+  position: absolute;
+  top: -12rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 37.5em) {
+  .button-over-image {
+    top: -25rem;
+  }
+}
+
+.button-over-image button {
+  background: var(--aqua-charge);
+  font-size: var(--small);
+  line-height: var(--body);
+  font-weight: 700;
+  padding: 1.25rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .button-over-image button {
+    font-size: var(--large);
+    line-height: var(--largest);
+    padding: 2.5rem;
+  }
 }
